@@ -7,8 +7,7 @@ const blueImgUrl = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIxIiBoZWlnaHQ9Ij
 
 export default function Header() {
   return (
-    <>
-        <div className="main-container-header"> 
+        <header className="main-container-header"> 
 
         {/* background image part*/}
             <div className="backgroun_img-header">
@@ -42,8 +41,7 @@ export default function Header() {
                                             <img src={blueImgUrl} />
                                     </div>
                     </section>
-        </div>
-    </>
+        </header>
   );
 }
 //works
