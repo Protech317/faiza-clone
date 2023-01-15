@@ -1,18 +1,19 @@
-import React from "react";
-import MENU from "../data";
+import React, { useState } from "react";
+import { MENU } from "../data";
 import Footer from "../components/footer/Footer";
-import MenuCard from "./menuCard/MenuCard";
-import Header from "./header/Header"
+import MenuCard from "../components/menuCard/MenuCard";
+import Header from "../components/header/Header";
+import CategoriesBtn from "../components/categoriesBtn/CategoriesBtn";
 
 export default function FullPage() {
-  const [menu , setMenu]= useState(MENU)
+  const [menu, setMenu] = useState(MENU);
   return (
     <div>
-       {/* <Navbar /> */}
+      {/* <Navbar /> */}
       <Header />
-      {/* <CategoriesBtn /> */}
-      <MenuCard menu={menu}/>
-      <Footer />  
+      <CategoriesBtn menu={menu} />
+      <MenuCard menu={menu} />
+      <Footer />
     </div>
   );
 }
