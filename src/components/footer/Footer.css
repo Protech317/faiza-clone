@@ -1,0 +1,28 @@
+.main-contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 50px 0 50px;
+    margin: 0;
+}
+.main-bottom{
+    
+    border-bottom: 2px solid tomato;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px 10px 20px;
+    margin: 0ch;
+}
+.main-bottom a {
+    text-decoration: none;
+}
+.main-bottom a:hover{
+    cursor: pointer;;
+}
+.main-center{
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid tomato;
+    
+}
