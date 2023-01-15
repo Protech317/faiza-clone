@@ -1,4 +1,5 @@
 import React from "react";
+import MENU from "../data";
 
 export default function FullPage() {
   return (
