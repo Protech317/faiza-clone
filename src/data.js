@@ -87,4 +87,12 @@ export const MENU = [
         img: "https://faiza.kg/media/menu/dishes/IMG_4231.jpg",
         desc: `Pancakes – a roasted culinary product made of very thin dough which is poured into a hot frying pan. Pancakes are served with a variety of snacks. In this embodiment, pancakes are served with a fresh cottage cheese that makes the dish very nourishing.`,
     },
+    {
+        id: 12,
+        title: "Pancakes",
+        category: "ice cream",
+        price: 39.99,
+        img: "https://faiza.kg/media/menu/dishes/IMG_4231.jpg",
+        desc: `Pancakes – a roasted culinary product made of very thin dough which is poured into a hot frying pan. Pancakes are served with a variety of snacks. In this embodiment, pancakes are served with a fresh cottage cheese that makes the dish very nourishing.`,
+    },
 ];
