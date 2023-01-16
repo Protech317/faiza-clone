@@ -23,7 +23,9 @@ export default function Footer() {
         />
       </div>
       <div className="main-bottom">
-        <a href="https://faiza.kg/">Cafe Faiza {new Date().toString()}</a>
+        <a href="https://faiza.kg/" target="_blank">
+          Cafe Faiza {new Date().toString()}
+        </a>
         <a href="https://learn.seytech.co/courses" target="_blank">
           {" "}
           Made With Love !
