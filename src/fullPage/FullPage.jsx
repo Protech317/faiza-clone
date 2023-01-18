@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { MENU } from "../data";
-import Footer from "../components/footer/Footer";
+// import Footer from "../components/footer/Footer";
 import MenuCard from "../components/menuCard/MenuCard";
 import Header from "../components/header/Header";
 import CategoriesBtn from "../components/categoriesBtn/CategoriesBtn";
 import ModalWindow from "../UI/Modal";
+import Navbar from "../components/navbar/Navbar";
 
 export default function FullPage() {
   const [menu, setMenu] = useState(MENU);
@@ -21,12 +22,12 @@ export default function FullPage() {
   };
   return (
     <div>
-      {/* <Navbar /> */}
+      <Navbar />
       <Header />
       <CategoriesBtn menu={menu} filterCategory={filterCategory} />
       {/* <ModalWindow clickedMenu={clickedCategory}> </ModalWindow> */}
       <MenuCard clickedMenu={clickedCategory} />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

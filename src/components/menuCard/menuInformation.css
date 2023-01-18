@@ -1,0 +1,17 @@
+.img-container{
+    display: flex;
+    gap: 10px;
+}
+ 
+ 
+ 
+ .img-container img{
+    height: 150px;
+    width: 150px;
+ }
+
+ .img-container h1{
+    min-width:300px;
+    
+ }
+ 

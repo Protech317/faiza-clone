@@ -6,8 +6,22 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import ModalWindow from "../../UI/Modal";
+import MenuInformation from "./MenuInformation"
+
+
+
 
 export default function MenuItems({ clickedMenu }) {
+  const [open, setOpen] = React.useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
   return (
     <>
       {clickedMenu.map((menu) => (
@@ -29,7 +43,7 @@ export default function MenuItems({ clickedMenu }) {
               variant="body2"
               color="text.secondary"
             >
-              {menu.desc}
+              {menu.desc.substring(0 , 150)}...
             </Typography>
           </CardContent>
           <CardActions>
@@ -44,7 +58,7 @@ export default function MenuItems({ clickedMenu }) {
               Add to cart
             </Button>
             <Button size="small" variant="contained">
-              Learn More
+              <MenuInformation  menu={menu}/>
             </Button>
           </CardActions>
         </Card>
