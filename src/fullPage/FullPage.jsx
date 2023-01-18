@@ -10,6 +10,7 @@ import Navbar from "../components/navbar/Navbar";
 export default function FullPage() {
   const [menu, setMenu] = useState(MENU);
   const [clickedCategory, setClickedCategory] = useState(menu);
+  const [addedToCard , setAddedToCard] = useState ([])
 
   const filterCategory = (category) => {
     setClickedCategory(menu);
